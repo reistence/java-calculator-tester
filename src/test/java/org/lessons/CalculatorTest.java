@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-
-
     @org.junit.jupiter.api.Test
     void add() {
         float res = Calculator.add(2.0f, 3.0f);
@@ -22,7 +20,6 @@ class CalculatorTest {
     void divide() {
         float res = Calculator.divide(10.0f, 2.0f);
         assertEquals(5.0f, res);
-
         assertThrows(IllegalArgumentException.class, () -> Calculator.divide(4.0f, 0.0f));
     }
 
